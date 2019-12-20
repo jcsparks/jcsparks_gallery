@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Theme override to display a artwork media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes.addClass('jcs-artwork-article') }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+    <div class="jcs-artwork-content">
+      {{ content.field_media_image_1 }}
+      <h3 {{ title_attributes }}>{{ name }}</h3>
+      <span class="jcs-artwork-details">
+        {% if content.field_height|render and content.field_width|render %}
+          <span class="jcs-artwork-size">
+          {% if content.field_depth|render %}
+            {{ content.field_width|render|striptags|trim }}" x {{ content.field_height|render|striptags|trim }}" x {{ content.field_depth|render|striptags|trim }}"
+          {% else %}
+            {{ content.field_width|render|striptags|trim }}" x {{ content.field_height|render|striptags|trim }}"
+          {% endif %}
+          </span>
+        {% endif %}
+
+        {% if content.field_medium|render %}
+          <span class="jcs-artwork-medium">
+          {% if content.field_support|render %}
+            {{ content.field_medium|render|striptags|trim }} on {{ content.field_support|render|striptags|trim }}
+          {% else %}
+            {{ content.field_medium|render|striptags|trim }}
+          {% endif %}
+          </span>
+        {% endif %}
+
+        {% if content.field_artist|render %}
+          <span class="jcs-artwork-copyright">
+          {% if content.field_completion_date|render %}
+            &copy; {{ content.field_completion_date.value|render|striptags|date('Y') }} {{ content.field_artist|render|striptags|trim }}
+          {% else %}
+            {{ content.field_artist|render|striptags|trim}}
+          {% endif %}
+          </span>
+        {% endif %}
+
+      </span>
+    </div>
+  {% endif %}
+</article>

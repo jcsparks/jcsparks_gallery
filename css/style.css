@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  color: #fafafa;
+}
+
+a:hover {
+  color: rgb(203, 213, 241);
+  text-shadow: 1px 1px 1px rgba(20,20,20,0.6);
+}
+
+.layout-container {
+  background: rgb(15, 76, 129);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f4c6b+0,0f4c81+100 */
+  background: -moz-linear-gradient(-45deg,  rgb(40,51,76) 0%, rgb(15,76,129) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgb(40,51,76) 0%,rgb(15,76,129) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgb(40,51,76) 0%,rgb(15,76,129) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#0f4c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(20,20,20,0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jcs-main-nav-section {
+  background: #e0e0e0;
+}
+
+.jcs-main-nav-section a {
+  color: #222222;
+  text-shadow: none;
+}
+
+.jcs-artwork-article {
+  height: 100%;
+  padding-bottom: 2.5rem;
+}
+
+.jcs-artwork-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jcs-artwork-content {
+  padding: 0;
+  border: 1px solid #404050;
+  border-radius: 4px;
+  background: #fafafa;
+  color: rgb(60,60,60);
+  text-shadow: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.jcs-artwork-content:hover {
+  box-shadow: 2px 2px 4px rgba(20,20,20,0.45);
+}
+
+span.jcs-artwork-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+}
+
+.jcs-artwork-content h3 {
+  margin: 0.5rem;
+}
+
+.jcs-footer-container {
+  text-align: right;
+}
+

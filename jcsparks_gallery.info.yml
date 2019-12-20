@@ -1,0 +1,19 @@
+name: 'Jeremy C. Sparks - Gallery Theme'
+type: theme
+description: 'Custom D8 theme for the gallery website for Jeremy C. Sparks'
+core: 8.x
+package: Custom
+base theme: stable
+
+libraries:
+  - jcsparks_gallery/global
+
+regions:
+  header: 'Header'
+  primary_menu: 'Main Menu'
+  secondary_menu: 'Secondary Menu'
+  social: 'Social Media'
+  breadcrumb: 'Breadcrumb'
+  content: 'Main Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'

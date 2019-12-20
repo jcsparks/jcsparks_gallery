@@ -1,0 +1,10 @@
+<?php
+
+use Drupal\Core\Entity\ContentEntityBase;
+
+/**
+ * @file
+ * Functions to support the UCB Base 2019 theme.
+ */
+
+
